@@ -16,6 +16,23 @@
 	</style>
 	<style data-styled="active" data-styled-version="5.0.0"></style>
 	<meta id="viewportMeta" name="viewport" content="width=device-width, initial-scale=1" data-react-helmet="true">
+	
+	<style type="text/css" media="print">
+		@media print {
+		  * {-webkit-print-color-adjust: exact;}
+		  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+		    color-adjust: exact !important;                 /*Firefox*/
+		}
+		@page {
+		    size:A4 landscape;
+		    margin-left: 0px;
+		    margin-right: 0px;
+		    margin-top: 0px;
+		    margin-bottom: 0px;
+		    margin: 0;
+		    -webkit-print-color-adjust: exact;
+		}
+	</style>
 </head>
 
 <body > <!--data-gr-c-s-loaded="true" class=""-->
@@ -28,7 +45,8 @@
 	 	 <div class="editor-wrapper">
 	 	  <div class="resume-editor-content-box center-block">
 	 	   <div class="resume-editor-wrapper feedback-wrapper">
-	 		<div id="resume-5f23f332a59abc005203c174" class="resume-renderer resume-body-font center-resume"><style class="resume-colors-style">
+	 		<div id="resume-5f23f332a59abc005203c174" class="resume-renderer resume-body-font center-resume">
+			<style class="resume-colors-style">
 				#resume-5f23f332a59abc005203c174 .resume-first-color {
 					color: #002878 !important;
 				}
@@ -103,7 +121,8 @@
 				#resume-5f23f332a59abc005203c174 .resume-second-stroke {
 					stroke: #00B8FD !important;
 				}
-			</style><style class="resume-fonts-style">
+			</style>
+			<style class="resume-fonts-style">
 				#resume-5f23f332a59abc005203c174 .resume-heading-font {
 					font-family: "Rubik", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
 				}
@@ -111,12 +130,13 @@
 				#resume-5f23f332a59abc005203c174.resume-body-font {
 					font-family: "Inter UI", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
 				}
-			</style><style class="resume-background-style">
-		        #resume-5f23f332a59abc005203c174 .resume-background-wrapper {
-		            background-size: cover;
-		            background-image: url('resources/images/background/bg7.png');
-		        }
-		    </style>
+			</style>
+			<style class="resume-background-style">
+				#resume-5f23f332a59abc005203c174 .resume-background-wrapper {
+				    background-size: cover;
+				    background-image: url('resources/images/background/bg7.png') no-repeat !important;;
+				}
+		    	</style>
 					 
 
 			 <div style="position: relative; margin-top: 40px;">
@@ -136,7 +156,7 @@
 									    		  </div>
 									    		 </div>
 
-									    		 <div class="resume-header-col resume-header-col-right photo-container relative"><div class="photo relative photo-round editable" style="background-image: url(&quot;resources/avatars/prashantProfilePic.jpg&quot;);">
+									    		 <div class="resume-header-col resume-header-col-right photo-container relative"><div class="photo relative photo-round editable" style="background-image: url(&quot;resources/avatars/prashantProfilePic.jpg&quot;) no-repeat !important;">
 
 									    		 	<!-- <div class="responsive-transition-item photo-button-container animated-hover fadeIn Grid Grid--justifyCenter Grid--alignCenter"><div class="Grid--justifyCenter Grid--alignCenter"><button type="button" class="btn btn-primary btn-icon"><i class="icon icon-cloud-upload btn-icon-single"></i></button><button type="button" class="btn btn-danger btn-icon m-left-2"><i class="icon icon-eye-disabled btn-icon-single"></i></button></div>
 									    		 	</div> -->
