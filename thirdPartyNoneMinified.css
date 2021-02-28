@@ -13418,7 +13418,7 @@ to {
 .resume-layout-newcondensed .resume-section .resume-section-container {
     margin-bottom: 8px;
 }
-.resume-layout-newcondensed .resume-section .resume-section-text {
+/*.resume-layout-newcondensed .resume-section .resume-section-text {
     color: #65696d;
     font-size: 14px;
     font-weight: 400;
@@ -13436,6 +13436,30 @@ to {
 }
 .resume-layout-newcondensed .resume-section .resume-section-text::placeholder {
     color: #65696d!important;
+}*/
+.resume-layout-newcondensed .resume-section .resume-section-text {
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 22px;
+    border-bottom: 2px solid black;
+}
+.border-bottom-doted {
+    border: 0px solid grey !important;
+    border-bottom: 2px solid grey !important;
+    border-style: dashed !important;
+}
+.resume-layout-newcondensed .resume-section .resume-section-text::-webkit-input-placeholder {
+    color: black!important;
+}
+.resume-layout-newcondensed .resume-section .resume-section-text::-moz-placeholder {
+    color: black!important;
+}
+.resume-layout-newcondensed .resume-section .resume-section-text::-ms-input-placeholder {
+    color: black!important;
+}
+.resume-layout-newcondensed .resume-section .resume-section-text::placeholder {
+    color: black!important;
 }
 .resume-layout-newcondensed .resume-item-holder .item-object {
     padding: 8px 15px;
@@ -21584,14 +21608,14 @@ to {
     -webkit-box-shadow: 0 31px 10px rgba(0, 0, 0, .6);
     box-shadow: 0 31px 10px rgba(0, 0, 0, .6);
 }
-.browser-resume-page:after {
+/*.browser-resume-page:after {
     right: -1px;
     bottom: 50px;
     -webkit-transform: skew(2deg) rotate(3deg);
     transform: skew(2deg) rotate(3deg);
     -webkit-box-shadow: 0 47px 14px rgba(0, 0, 0, .5);
     box-shadow: 0 47px 14px rgba(0, 0, 0, .5);
-}
+}*/
 .a-resume-appear {
     opacity: 0;
     -webkit-backface-visibility: hidden;
