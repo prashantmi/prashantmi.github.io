@@ -13382,7 +13382,7 @@ to {
     padding-right: 15px;
 }
 .resume-renderer-two-column:first-child .AwardSection .resume-item-holder, .resume-renderer-two-column:first-child .CourseSection .resume-item-holder, .resume-renderer-two-column:first-child .LanguageSection .resume-item-holder, .resume-renderer-two-column:first-child .PassionSection .resume-item-holder, .resume-renderer-two-column:first-child .SkillSection .resume-item-holder, .resume-renderer-two-column:first-child .SocialSection .resume-item-holder {
-    width: 50%;
+    /*width: 50%;*/
     display: inline-block;
     vertical-align: top;
 }
@@ -15340,7 +15340,7 @@ a .item-object.social-item {
     margin-bottom: 4px;
 }
 .social-item .social-item-link {
-    font-size: 13px;
+    font-size: 12px;
     color: #384347!important;
     position: relative;
 }
