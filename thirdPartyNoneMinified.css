@@ -12960,9 +12960,7 @@ to {
 .resume-layout-default.resume-layout-small .resume-header {
     padding-bottom: 5px!important;
 }
-.resume-layout-default.resume-layout-small .summary-item .editable-field {
-    font-size: 14px!important;
-}
+
 .resume-layout-default.resume-layout-small .resume-item-holder .item-object>.inner {
     padding-bottom: 8px!important;
 }
@@ -13028,9 +13026,7 @@ to {
 .resume-layout-newcondensed.resume-layout-small .resume-section {
     padding-bottom: 0!important;
 }
-.resume-layout-newcondensed.resume-layout-small .achievement-item .achievement-item-description, .resume-layout-newcondensed.resume-layout-small .day-of-my-life-item .day-of-my-life-labels .day-of-my-life-title, .resume-layout-newcondensed.resume-layout-small .editable-field-sm, .resume-layout-newcondensed.resume-layout-small .summary-item .editable-field {
-    font-size: 12px!important;
-}
+
 .resume-layout-newcondensed.resume-layout-small .quote-item-quote {
     font-size: 14px!important;
 }
@@ -13309,7 +13305,7 @@ to {
 }
 .resume-renderer-page {
     height: 1329px;
-    padding: 60px;
+    padding: 27px;
     page-break-after: always;
     position: relative;
     background-color: #fff;
@@ -13379,7 +13375,7 @@ to {
 }
 .resume-renderer-two-column:first-child {
     width: 60%;
-    padding-right: 15px;
+    /* padding-right: 15px; */
 }
 .resume-renderer-two-column:first-child .AwardSection .resume-item-holder, .resume-renderer-two-column:first-child .CourseSection .resume-item-holder, .resume-renderer-two-column:first-child .LanguageSection .resume-item-holder, .resume-renderer-two-column:first-child .PassionSection .resume-item-holder, .resume-renderer-two-column:first-child .SkillSection .resume-item-holder, .resume-renderer-two-column:first-child .SocialSection .resume-item-holder {
     /*width: 50%;*/
@@ -13574,33 +13570,7 @@ to {
 .resume-layout-condensed .resume-item-holder:after, .resume-layout-newcondensed .resume-item-holder:after {
     display: none!important;
 }
-.editable-field {
-    padding: 0;
-    border: 0;
-    resize: none;
-    width: 100%;
-    outline: none;
-    margin: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    display: block;
-    min-height: 10px;
-    background: transparent;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    text-size-adjust: none;
-    position: relative;
-    z-index: 1;
-    word-break: break-word;
-    letter-spacing: normal;
-}
-.editable-field:focus {
-    outline: none;
-}
+
 .editable-field-wrapper {
     position: relative;
     -webkit-box-flex: 1;
@@ -13633,52 +13603,41 @@ to {
     margin-left: -2px;
     margin-right: -2px;
 }
-input.editable-field {
-    overflow-x: initial!important;
-}
-a.editable-field {
-    word-wrap: break-word;
-    word-break: break-all;
-}
-.editable-field input {
-    outline: none;
-    border: none;
-    background-color: transparent;
-}
-.date-range-label, .editable-field::-webkit-input-placeholder, .editable-field input::-webkit-input-placeholder, [contenteditable][placeholder]:empty:before {
+
+.date-range-label, .editable-field::-webkit-input-placeholder, [contenteditable][placeholder]:empty:before {
     opacity: .5!important;
 }
-.date-range-label, .editable-field::-moz-placeholder, .editable-field input::-moz-placeholder, [contenteditable][placeholder]:empty:before {
+.date-range-label, .editable-field::-moz-placeholder, [contenteditable][placeholder]:empty:before {
     opacity: .5!important;
 }
-.date-range-label, .editable-field::-ms-input-placeholder, .editable-field input::-ms-input-placeholder, [contenteditable][placeholder]:empty:before {
+.date-range-label, .editable-field::-ms-input-placeholder, [contenteditable][placeholder]:empty:before {
     opacity: .5!important;
 }
-.date-range-label, .editable-field::placeholder, .editable-field input::placeholder, [contenteditable][placeholder]:empty:before {
+.date-range-label, .editable-field::placeholder, [contenteditable][placeholder]:empty:before {
     opacity: .5!important;
 }
-.editable-field:focus::-webkit-input-placeholder, .editable-field input:focus::-webkit-input-placeholder, [contenteditable][placeholder]:empty:focus:before {
+.editable-field:focus::-webkit-input-placeholder, [contenteditable][placeholder]:empty:focus:before {
     opacity: .2!important;
 }
-.editable-field:focus::-moz-placeholder, .editable-field input:focus::-moz-placeholder, [contenteditable][placeholder]:empty:focus:before {
+.editable-field:focus::-moz-placeholder, [contenteditable][placeholder]:empty:focus:before {
     opacity: .2!important;
 }
-.editable-field:focus::-ms-input-placeholder, .editable-field input:focus::-ms-input-placeholder, [contenteditable][placeholder]:empty:focus:before {
+.editable-field:focus::-ms-input-placeholder, [contenteditable][placeholder]:empty:focus:before {
     opacity: .2!important;
 }
-.editable-field:focus::placeholder, .editable-field input:focus::placeholder, [contenteditable][placeholder]:empty:focus:before {
+.editable-field:focus::placeholder, [contenteditable][placeholder]:empty:focus:before {
     opacity: .2!important;
 }
-.resume-section-text-container .editable-field::-webkit-input-placeholder, .resume-section-text-container .editable-field input::-webkit-input-placeholder {
+.resume-section-text-container .editable-field::-webkit-input-placeholder {
     opacity: 1!important;
 }
-.resume-section-text-container .editable-field::-moz-placeholder, .resume-section-text-container .editable-field input::-moz-placeholder {
+.resume-section-text-container .editable-field::-moz-placeholder {
     opacity: 1!important;
 }
-.resume-section-text-container .editable-field::-ms-input-placeholder, .resume-section-text-container .editable-field input::-ms-input-placeholder {
+.resume-section-text-container .editable-field::-ms-input-placeholder{
     opacity: 1!important;
 }
-.resume-section-text-container .editable-field::placeholder, .resume-section-text-container .editable-field input::placeholder {
+.resume-section-text-container .editable-field::placeholder{
     opacity: 1!important;
 }
 .empty-date span {
@@ -13707,38 +13666,22 @@ a.editable-field {
     -webkit-font-smoothing: initial;
     -moz-osx-font-smoothing: initial;
 }
-.resume-layout-condensed .editable-field {
-    line-height: 1.35;
-}
+
 .resume-layout-condensed .item-object .with-icon-container .with-icon .icon {
     font-size: 11px;
     margin-right: 5px;
     -webkit-transform: translateY(2px);
     transform: translateY(2px);
 }
-.resume-layout-condensed .item-object .with-icon-container .with-icon .editable-field {
-    line-height: normal;
-}
-.resume-layout-condensed .with-icon.btn-link.btn-resume-data, .resume-layout-condensed .with-icon .editable-field {
-    color: #65696d;
-}
-.resume-layout-condensed .with-icon .editable-field input {
-    min-width: 100%}
-.resume-layout-newcondensed .editable-field {
-    line-height: 1.35;
-    color: #384347;
-}
+
 .resume-layout-newcondensed .editable-field-sm {
     font-size: 12px;
 }
-.resume-layout-newcondensed .item-object .with-icon-container .with-icon .editable-field {
-    line-height: normal;
-}
-.resume-layout-newcondensed .with-icon.btn-link.btn-resume-data, .resume-layout-newcondensed .with-icon .editable-field {
+
+.resume-layout-newcondensed .with-icon.btn-link.btn-resume-data {
     color: #65696d;
 }
-.resume-layout-newcondensed .with-icon .editable-field input {
-    min-width: 100%}
+
 .resume-layout-newcondensed .item-url {
     margin-top: 8px;
     margin-left: 2px;
@@ -13746,20 +13689,17 @@ a.editable-field {
 .resume-layout-newcondensed .item-url .icon {
     margin-right: 6px;
 }
-.resume-layout-newcondensed .item-url .editable-field {
-    color: #b9b9b9;
-    font-size: 12px;
-}
-.resume-layout-newcondensed .date-range-label, .resume-layout-newcondensed .editable-field::-webkit-input-placeholder, .resume-layout-newcondensed .editable-field input::-webkit-input-placeholder {
+
+.resume-layout-newcondensed .date-range-label, .resume-layout-newcondensed .editable-field::-webkit-input-placeholder {
     color: #65696d!important;
 }
-.resume-layout-newcondensed .date-range-label, .resume-layout-newcondensed .editable-field::-moz-placeholder, .resume-layout-newcondensed .editable-field input::-moz-placeholder {
+.resume-layout-newcondensed .date-range-label, .resume-layout-newcondensed .editable-field::-moz-placeholder{
     color: #65696d!important;
 }
-.resume-layout-newcondensed .date-range-label, .resume-layout-newcondensed .editable-field::-ms-input-placeholder, .resume-layout-newcondensed .editable-field input::-ms-input-placeholder {
+.resume-layout-newcondensed .date-range-label, .resume-layout-newcondensed .editable-field::-ms-input-placeholder {
     color: #65696d!important;
 }
-.resume-layout-newcondensed .date-range-label, .resume-layout-newcondensed .editable-field::placeholder, .resume-layout-newcondensed .editable-field input::placeholder {
+.resume-layout-newcondensed .date-range-label, .resume-layout-newcondensed .editable-field::placeholder {
     color: #65696d!important;
 }
 .with-icon-container {
@@ -13813,9 +13753,7 @@ a.editable-field {
     flex: 0 0 auto;
     height: 14px;
 }
-.with-icon .editable-field {
-    padding-left: 2px;
-}
+
 .with-icon a {
     color: inherit;
 }
@@ -13905,12 +13843,7 @@ a.editable-field {
     line-height: 25px;
     font-weight: 700!important;
 }
-.resume-header .with-icon .editable-field {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    margin-left: 1px;
-}
+
 .resume-header .with-icon {
     width: 33%;
     padding-bottom: 7px;
@@ -13982,11 +13915,7 @@ a.editable-field {
     color: #555!important;
     height: 14px;
 }
-.resume-layout-condensed .resume-header .with-icon-container .with-icon .editable-field {
-    font-size: 12px;
-    color: #65696d;
-    font-weight: 400;
-}
+
 .resume-layout-newcondensed .resume-header-with-photo .resume-header-col.resume-header-col-left {
     width: 82%;
     min-height: 116px;
@@ -14025,12 +13954,7 @@ a.editable-field {
     margin-right: 3px;
     margin-left: 5px;
 }
-.resume-layout-newcondensed .resume-header .with-icon-container .with-icon .editable-field {
-    font-size: 13px;
-    color: #384347;
-    font-weight: 400!important;
-    line-height: 15px;
-}
+
 .quote-item .quote-item-quote {
     font-size: 18px;
     font-style: italic;
@@ -15185,13 +15109,7 @@ a.editable-field {
     border-left: 1px solid #65696d;
     font-size: 15px;
 }
-.education-item .education-item-gpa .editable-field {
-    display: inline-block;
-    width: 35px;
-    height: 20px!important;
-    color: #65696d;
-    text-align: center;
-}
+
 .education-item .education-item-gpa .separator {
     position: relative;
     vertical-align: top;
@@ -15231,14 +15149,7 @@ a.editable-field {
     display: inline-block;
     vertical-align: middle;
 }
-.education-item .education-item-gpa-container-small .editable-field {
-    display: inline-block;
-    vertical-align: middle;
-    width: auto;
-}
-.education-item .education-item-gpa-container-small .editable-field input {
-    background-color: transparent;
-}
+
 .resume-layout-condensed .education-item .with-icon-container .with-icon {
     padding-bottom: 2px;
 }
@@ -15255,9 +15166,7 @@ a.editable-field {
     border-left-color: #f1f1f1;
     padding-left: 12px;
 }
-.resume-layout-newcondensed .education-item .education-item-gpa .editable-field {
-    text-align: unset;
-}
+
 .resume-layout-newcondensed .education-item .education-item-gpa .gpa-text-wrapper {
     text-align: left;
     margin-top: 8px;
@@ -15272,11 +15181,7 @@ a.editable-field {
     vertical-align: middle;
     margin: 0 6px;
 }
-.resume-layout-newcondensed .education-item .education-item-gpa-container-left .editable-field {
-    display: inline-block;
-    vertical-align: middle;
-    width: auto;
-}
+
 .resume-layout-newcondensed .education-item .education-item-gpa-container-left [contenteditable].text-field {
     overflow: unset;
 }
@@ -15401,17 +15306,11 @@ a .item-object.social-item {
 .resume-layout-condensed .social-item .social-item-link {
     color: #65696d;
 }
-.summary-item .editable-field {
+.summary-item .text-field {
     color: #384347;
-    font-size: 15px;
+    font-size: 14px;
 }
-.resume-layout-condensed .summary-item .editable-field {
-    font-size: 13px;
-}
-.cover-letter .summary-item .editable-field {
-    text-align: justify;
-    white-space: inherit!important;
-}
+
 .resume-renderer-two-column:nth-child(2) .BookSection .resume-item-holder {
     width: 50%;
     display: inline-block;
@@ -21589,7 +21488,7 @@ to {
 }
 .browser-resume-page {
     position: relative;
-    margin-bottom: 40px;
+    
     -webkit-box-shadow: 0 0 2px 0 rgba(83, 83, 83, .5);
     box-shadow: 0 0 2px 0 rgba(83, 83, 83, .5);
 }
@@ -21598,24 +21497,24 @@ to {
     background: transparent;
     z-index: -1;
     position: absolute;
-    height: 10px;
-    width: 60%}
+    height: 8px;
+    width: 70%}
 .browser-resume-page:before {
-    left: 20px;
-    bottom: 30px;
+    left: 7px;
+    bottom: 27px;
     -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg);
     -webkit-box-shadow: 0 31px 10px rgba(0, 0, 0, .6);
     box-shadow: 0 31px 10px rgba(0, 0, 0, .6);
 }
-/*.browser-resume-page:after {
+.browser-resume-page:after {
     right: -1px;
-    bottom: 50px;
+    bottom: 52px;
     -webkit-transform: skew(2deg) rotate(3deg);
     transform: skew(2deg) rotate(3deg);
-    -webkit-box-shadow: 0 47px 14px rgba(0, 0, 0, .5);
-    box-shadow: 0 47px 14px rgba(0, 0, 0, .5);
-}*/
+    -webkit-box-shadow: 0 47px 14px rgba(0, 0, 0, .6);
+    box-shadow: 0 47px 14px rgba(0, 0, 0, .6);
+}
 .a-resume-appear {
     opacity: 0;
     -webkit-backface-visibility: hidden;
