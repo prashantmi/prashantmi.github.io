@@ -184,3 +184,55 @@
 	</div>
 </div>
 <!-- Second page ends -->
+
+<!-- <script type="text/javascript" src="app.js"></script> -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- html2pdf -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<!-- FileSaver.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+
+<script type="text/javascript">
+	var pdfDataGlobal = null;
+	$(document).ready(function () {
+		// Function to generate PDF
+		function generatePDF() {
+			const element = document.getElementById('bodyDiv');
+			const pdfButton = document.getElementById('printButton');
+
+			// Configure the PDF options
+			const pdfOptions = {
+				margin: 0,
+				filename: 'Prashant Lead Developer Resume.pdf',
+				image: { type: 'jpeg', quality: 1 },
+				html2canvas: { scale: 1 },
+				jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+			};
+
+			// Generate PDF when the button is clicked
+			pdfButton.addEventListener('click', () => {
+				html2pdf()
+					.from(element)
+					.set(pdfOptions)
+					.outputPdf('datauri') //datauristring, datauri, blob
+					.then(function (pdfData) {
+						pdfDataGlobal = pdfData;
+						// Save or display the PDF as needed
+						console.log('generatePDF function is executing');
+
+						saveAs(pdfData, 'Prashant Lead Developer Resume.pdf');
+
+						// const pdfWindow = window.open();
+						// pdfWindow.document.write('<iframe width="100%" height="100%" src="' + pdfDataGlobal + '" frameborder="0" allowfullscreen></iframe>');
+
+					});
+			});
+		}
+
+		// Call the generatePDF function
+		// generatePDF();
+	});
+</script>

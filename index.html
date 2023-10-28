@@ -7,6 +7,12 @@
 	<!-- 	<meta id="viewportMeta" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
 	<meta id="viewportMeta" name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes">
 
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="fontNIcon.css" rel="stylesheet">
+	<link href="thirdPartyNoneMinified.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CRoboto:300,400,600,700%7CPT+Sans:300,400,700%7CLato:400,700,800%7CRubik:400,500%7CAbril+Fatface%7CRaleway:300,400,600,700%7CMontserrat:300,400,700%7CExo+2:400,600%7COswald:300,400,700%7CChivo%7CRoboto+Slab:400,700%7CBitter:400,700%7CVolkhov:400,700&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic,latin,cyrillic-ext,latin-ext,cyrillic,latin,cyrillic-ext,latin-ext,cyrillic,latin,cyrillic-ext,latin-ext,cyrillic,latin,latin-ext,cyrillic,latin,latin-ext,latin,latin-ext,latin,latin,latin-ext,cyrillic,latin,latin-ext,latin,latin,cyrillic-ext,latin-ext,cyrillic,latin,latin-ext,latin,latin-ext" media="all">
+	<title>Prashant Resume</title>
+
 	<style>
 		.browsehappy {
 			text-align: center;
@@ -85,11 +91,7 @@
 			font-family: Arial, serif
 		}
 	</style>
-	<link rel="shortcut icon" href="favicon.ico">
-	<link href="fontNIcon.css" rel="stylesheet">
-	<!-- <link href="thirdParty.css" rel="stylesheet"> -->
-	<link href="thirdPartyNoneMinified.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CRoboto:300,400,600,700%7CPT+Sans:300,400,700%7CLato:400,700,800%7CRubik:400,500%7CAbril+Fatface%7CRaleway:300,400,600,700%7CMontserrat:300,400,700%7CExo+2:400,600%7COswald:300,400,700%7CChivo%7CRoboto+Slab:400,700%7CBitter:400,700%7CVolkhov:400,700&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic,latin,cyrillic-ext,latin-ext,cyrillic,latin,cyrillic-ext,latin-ext,cyrillic,latin,cyrillic-ext,latin-ext,cyrillic,latin,latin-ext,cyrillic,latin,latin-ext,latin,latin-ext,latin,latin,latin-ext,cyrillic,latin,latin-ext,latin,latin,cyrillic-ext,latin-ext,cyrillic,latin,latin-ext,latin,latin-ext" media="all">
+
 	<style type="text/css">
 		.smooth-dnd-container {
 			position: relative;
@@ -159,14 +161,14 @@
 			user-select: none;
 		}
 	</style>
+
 	<style data-styled="active" data-styled-version="5.0.0"></style>
+
 	<style>
 		body {
 			background-color: #575757;
 		}
 	</style>
-
-	<meta id="viewportMeta" name="viewport" content="width=device-width, initial-scale=1" data-react-helmet="true">
 
 	<style type="text/css" media="print">
 		@media print {
@@ -187,7 +189,8 @@
 			}
 
 			.item-object,
-			.resume-section-container.editable {
+			.resume-section-container.editable,
+			.resume-header.editable {
 				border: 1px solid transparent !important;
 			}
 
@@ -223,6 +226,51 @@
 			-ms-user-select: none;
 		}
 	</style>
+
+	<style>
+		/* CSS for the button and icon */
+		.btn-icon {
+			position: relative;
+		}
+
+		.icon-file-pdf-o {
+			font-size: 24px;
+			/* Adjust the icon size as needed */
+		}
+
+		/* Animation keyframes for the bounce effect */
+		@keyframes bounce {
+
+			0%,
+			20%,
+			50%,
+			80%,
+			100% {
+				transform: translateY(0);
+			}
+
+			40% {
+				transform: translateY(-10px);
+			}
+
+			60% {
+				transform: translateY(-5px);
+			}
+		}
+
+		/* Apply the bounce animation continuously */
+		.btn-icon .icon-file-pdf-o {
+			animation: bounce 3s ease-in-out infinite;
+			/* Bounce every one second */
+		}
+
+		/* Apply the bounce animation */
+		.btn-icon.clicked .icon-file-pdf-o {
+			animation: none;
+			/* Disable the animation on click */
+		}
+	</style>
+
 
 </head>
 
@@ -401,7 +449,11 @@
 									<div class="content-field-wrapper relative">
 										<div class="text-field full-width-field name resume-heading-font resume-first-color uppercase-name">PRASHANT MISHRA<small>
 												<pre class="version"> v7.0 </pre>
-											</small></div>
+											</small>
+											<!-- Button with animated PDF icon -->
+											<!-- Button with a PDF icon -->
+											<button type="button" class="btn btn-info btn-icon no-print" id="printButton"><i class="icon icon-file-pdf-o"></i></button>
+										</div>
 									</div>
 									<div class="resume-header-title-placeholder">
 										<div class="content-field-wrapper relative">
@@ -435,9 +487,6 @@
 								<div class="resume-header-col resume-header-col-right photo-container relative">
 									<div class="photo relative photo-round editable">
 										<img src="resources/avatars/prashantProfilePic.jpg" class="prashantProfileImg">
-										<div class="responsive-transition-item photo-button-container animated-hover fadeIn Grid Grid--justifyCenter Grid--alignCenter">
-											<div class="Grid--justifyCenter Grid--alignCenter"><button type="button" class="btn btn-info btn-icon" id="pdf-button"><i class="icon icon-download-1 btn-icon-single"></i></button></div>
-										</div>
 									</div>
 								</div>
 								<div class="clearfix"></div>
@@ -559,7 +608,7 @@
 															<div class="media-left media-left-xs"><i class="icon icon-dot-1 bullet-dot"></i></div>
 															<div class="media-body item-0">
 																<div class="content-field-wrapper  relative">
-																	<div class="text-field content-field-muted content-field-sm item-bullet"><a id="pv10drtnnk">Managed and debugged production-grade applications deployed on GCP, ensuring seamless operation.</a>
+																	<div class="text-field content-field-muted content-field-sm item-bullet"><a id="pv10drtnnk">Managed and debugged production-grade microservices/monolith applications deployed on GCP, ensuring seamless operation.</a>
 																	</div>
 																</div>
 															</div>
@@ -570,7 +619,7 @@
 															<div class="media-left media-left-xs"><i class="icon icon-dot-1 bullet-dot"></i></div>
 															<div class="media-body item-0">
 																<div class="content-field-wrapper  relative">
-																	<div class="text-field content-field-muted content-field-sm item-bullet"><a id="pv10drtnnk">Leveraged Kafka and Redis for data streaming, enhancing the real-time data visualization on the dashboard.</a>
+																	<div class="text-field content-field-muted content-field-sm item-bullet"><a id="pv10drtnnk">Leveraged Kafka and Redis for data streaming, enhancing the real-time data visualization on the dashboard while ensuring microservices communication and data flow efficiency.</a>
 																	</div>
 																</div>
 															</div>
@@ -581,7 +630,7 @@
 															<div class="media-left media-left-xs"><i class="icon icon-dot-1 bullet-dot"></i></div>
 															<div class="media-body item-0">
 																<div class="content-field-wrapper  relative">
-																	<div class="text-field content-field-muted content-field-sm item-bullet"><a id="pv10drtnnk"><b>Technologies used</b> Java, Spring Boot, Kafka, Redis, Docker, Kubernetes, AWS, GCP, Open API Spec., Maven, Postgres, JPA.</a>
+																	<div class="text-field content-field-muted content-field-sm item-bullet"><a id="pv10drtnnk"><b>Technologies used</b> Java, Spring Boot, Microservices, Kafka, Redis, Docker, Kubernetes, AWS, GCP, Open API Spec., Maven, Postgres, JPA.</a>
 																	</div>
 																</div>
 															</div>
@@ -1236,62 +1285,20 @@
 			</div>
 		</div>
 	</div>
-	<!-- <script type="text/javascript" src="app.js"></script> -->
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-	<!-- html2pdf -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-	<!-- FileSaver.js -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+	<script>
+		// JavaScript to handle the click event and stop the animation
+		const printButton = document.getElementById("printButton");
 
-	<script type="text/javascript">
-		function generatePDFf() {
-			var element = document.getElementById('bodyDiv');
-			html2pdf()
-				.from(element)
-				.save();
-		}
-	</script>
+		printButton.addEventListener("click", function () {
+			// Toggle the 'clicked' class to stop the animation
+			printButton.classList.toggle("clicked");
 
-	<script type="text/javascript">
-		$(document).ready(function () {
-			// Function to generate PDF
-			function generatePDF() {
-				const element = document.getElementById('bodyDiv');
-				const pdfButton = document.getElementById('pdf-button');
-
-				// Configure the PDF options
-				const pdfOptions = {
-					margin: 10,
-					filename: 'Prashant Lead Developer Resume.pdf',
-					image: { type: 'jpeg', quality: 0.98 },
-					html2canvas: { scale: 2 },
-					jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-				};
-
-				// Generate PDF when the button is clicked
-				pdfButton.addEventListener('click', () => {
-					html2pdf()
-						.from(element)
-						.set(pdfOptions)
-						.outputPdf() //datauristring
-						.then(function (pdfData) {
-							// Save or display the PDF as needed
-							console.log('generatePDF function is executing');
-
-							pdf.save();
-							saveAs(pdfData, 'Prashant Lead Developer Resume.pdf');
-
-						});
-				});
-			}
-
-			// Call the generatePDF function
-			generatePDF();
+			// You can generate or fetch a PDF here and then print it
+			// For simplicity, we'll just trigger the browser's print dialog
+			window.print(); // This will trigger the browser's print dialog
 		});
 	</script>
-
 
 </body>
 
