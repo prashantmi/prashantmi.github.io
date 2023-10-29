@@ -13018,7 +13018,7 @@ to {
 }
 .resume-layout-newcondensed.resume-layout-small .activity-item .item-bullet, .resume-layout-newcondensed.resume-layout-small .education-item .item-bullet, .resume-layout-newcondensed.resume-layout-small .experience-item .item-bullet, .resume-layout-newcondensed.resume-layout-small .publication-item .item-bullet, .resume-layout-newcondensed.resume-layout-small .technologies-item .item-bullet, .resume-layout-newcondensed.resume-layout-small .volunteer-item .item-bullet {
     font-size: 13px!important;
-    line-height: 16px!important;
+    line-height: 17px!important;
 }
 .resume-layout-newcondensed.resume-layout-small .bullet-dot {
     margin-right: 0!important;
@@ -13305,7 +13305,7 @@ to {
 }
 .resume-renderer-page {
     height: 1329px;
-    padding: 27px;
+    padding: 20px;
     page-break-after: always;
     position: relative;
     background-color: #fff;
@@ -14825,7 +14825,7 @@ to {
 }
 .resume-layout-newcondensed .bullet-dot {
     color: #384347;
-    font-size: 6px;
+    font-size: 10px;
     margin-left: 2px;
     margin-right: 8px;
 }
