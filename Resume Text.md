@@ -12,6 +12,7 @@
 
 Software Engineer with ~6 years of experience specializing in Full-Stack and Backend development across Telecom, Health Care, and e-commerce sectors. Proficient in writing maintainable code. Versatile in collaborating across varied team sizes and work settings, including remote and in-office.
 
+Lead Software Developer with ~6 years of experience specializing in Full-Stack, Backend development, and DevOps across Internet & Telecom, Health Care, and e-commerce sectors. Proficient with Java, Microservices, Kafka, Spring Boot, SQL, Kubernetes, Docker, Cloud, JUnit, Distributed transactions, and Multithreading. Proficient in writing maintainable code. Versatile in collaborating across varied team sizes and work settings, including remote and in-office.
 ---
 
 #### PROFESSIONAL EXPERIENCE
