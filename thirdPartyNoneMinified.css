@@ -13372,6 +13372,8 @@ to {
     float: left;
     width: 50%;
     min-height: 1px;
+    display: inline-block;
+    vertical-align: top;
 }
 .resume-renderer-two-column:first-child {
     width: 60%;
