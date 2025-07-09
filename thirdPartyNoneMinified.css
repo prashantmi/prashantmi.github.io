@@ -263,8 +263,8 @@ img {
     -webkit-border-radius: 50%;
     border-radius: 50%}
 hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border: 0;
     border-top: 1px solid hsla(210, 3%, 71%, .5);
 }
