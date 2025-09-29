@@ -1,6 +1,3 @@
-
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -142,7 +139,7 @@ table {
 td, th {
     padding: 0;
 }
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
 @media print {
     *, : after, :before {
     color: #000!important;
@@ -11154,11 +11151,6 @@ ul.icons-list li .tooltip-icon .icon {
     border-radius: 0;
 }
 
-/*!
- * Flexgrid.css by axiomzen.co - github.com/axiomzen/flexgrid.css
- * License - MIT
- */
-
  .Grid {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -13304,7 +13296,8 @@ to {
     display: none;
 }
 .resume-renderer-page {
-    height: 1329px;
+    min-height: 1329px;
+    height: auto;
     padding: 20px;
     page-break-after: always;
     position: relative;
@@ -13375,10 +13368,10 @@ to {
 }
 .resume-renderer-two-column:first-child {
     width: 60%;
-    /* padding-right: 15px; */
+    
 }
 .resume-renderer-two-column:first-child .AwardSection .resume-item-holder, .resume-renderer-two-column:first-child .CourseSection .resume-item-holder, .resume-renderer-two-column:first-child .LanguageSection .resume-item-holder, .resume-renderer-two-column:first-child .PassionSection .resume-item-holder, .resume-renderer-two-column:first-child .SkillSection .resume-item-holder, .resume-renderer-two-column:first-child .SocialSection .resume-item-holder {
-    /*width: 50%;*/
+    
     display: inline-block;
     vertical-align: top;
 }
@@ -13414,25 +13407,7 @@ to {
 .resume-layout-newcondensed .resume-section .resume-section-container {
     margin-bottom: 8px;
 }
-/*.resume-layout-newcondensed .resume-section .resume-section-text {
-    color: #65696d;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    border-bottom: 2px solid hsla(210, 4%, 41%, .5);
-}
-.resume-layout-newcondensed .resume-section .resume-section-text::-webkit-input-placeholder {
-    color: #65696d!important;
-}
-.resume-layout-newcondensed .resume-section .resume-section-text::-moz-placeholder {
-    color: #65696d!important;
-}
-.resume-layout-newcondensed .resume-section .resume-section-text::-ms-input-placeholder {
-    color: #65696d!important;
-}
-.resume-layout-newcondensed .resume-section .resume-section-text::placeholder {
-    color: #65696d!important;
-}*/
+
 .resume-layout-newcondensed .resume-section .resume-section-text {
     color: black;
     font-size: 15px;
